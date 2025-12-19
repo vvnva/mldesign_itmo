@@ -1,0 +1,32 @@
+[tool.black]
+line-length = 100
+target-version = ["py39"]
+
+[tool.ruff]
+line-length = 100
+extend-exclude = ["notebooks", "data"]
+select = ["E", "F", "W", "I", "N"]
+ignore = ["E501"]
+
+[tool.ruff.format]
+preview = true
+
+[tool.mypy]
+python_version = "3.9"
+ignore_missing_imports = true
+allow_redefinition = true
+exclude = "notebooks"
+
+[tool.isort]
+profile = "black"
+line_length = 100
+[project]
+name = "mldesign_itmo"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Vera",email = "vera.ivanova204@gmail.ru"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
